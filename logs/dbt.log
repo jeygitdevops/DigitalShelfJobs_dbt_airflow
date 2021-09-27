@@ -1,0 +1,290 @@
+2021-09-27 08:57:45.945567 (MainThread): Running with dbt=0.20.0
+2021-09-27 08:57:46.191342 (MainThread): running dbt with arguments Namespace(cls=<class 'dbt.task.run.RunTask'>, debug=False, defer=None, exclude=None, fail_fast=False, full_refresh=False, log_cache_events=False, log_format='default', models=None, partial_parse=None, profile=None, profiles_dir='/home/airflowdbt/.dbt', project_dir=None, record_timing_info=None, rpc_method='run', selector_name=None, single_threaded=False, state=None, strict=False, target=None, test_new_parser=False, threads=None, use_cache=True, use_colors=None, use_experimental_parser=False, vars='{}', version_check=True, warn_error=False, which='run', write_json=True)
+2021-09-27 08:57:46.192612 (MainThread): Tracking: tracking
+2021-09-27 08:57:46.203945 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa656ba1c70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa655c26bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa655c26be0>]}
+2021-09-27 08:57:46.217145 (MainThread): Partial parsing not enabled
+2021-09-27 08:57:46.225332 (MainThread): Parsing macros/adapters.sql
+2021-09-27 08:57:46.246551 (MainThread): Parsing macros/catalog.sql
+2021-09-27 08:57:46.250963 (MainThread): Parsing macros/materializations/seed.sql
+2021-09-27 08:57:46.256581 (MainThread): Parsing macros/materializations/view.sql
+2021-09-27 08:57:46.262212 (MainThread): Parsing macros/materializations/incremental.sql
+2021-09-27 08:57:46.271392 (MainThread): Parsing macros/materializations/table.sql
+2021-09-27 08:57:46.274239 (MainThread): Parsing macros/materializations/snapshot.sql
+2021-09-27 08:57:46.275103 (MainThread): Parsing macros/core.sql
+2021-09-27 08:57:46.279149 (MainThread): Parsing macros/adapters/common.sql
+2021-09-27 08:57:46.326725 (MainThread): Parsing macros/materializations/helpers.sql
+2021-09-27 08:57:46.337493 (MainThread): Parsing macros/materializations/test.sql
+2021-09-27 08:57:46.344241 (MainThread): Parsing macros/materializations/snapshot/snapshot_merge.sql
+2021-09-27 08:57:46.346575 (MainThread): Parsing macros/materializations/snapshot/strategies.sql
+2021-09-27 08:57:46.364268 (MainThread): Parsing macros/materializations/snapshot/snapshot.sql
+2021-09-27 08:57:46.392720 (MainThread): Parsing macros/materializations/incremental/helpers.sql
+2021-09-27 08:57:46.394896 (MainThread): Parsing macros/materializations/incremental/incremental.sql
+2021-09-27 08:57:46.401913 (MainThread): Parsing macros/materializations/table/table.sql
+2021-09-27 08:57:46.407813 (MainThread): Parsing macros/materializations/common/merge.sql
+2021-09-27 08:57:46.420593 (MainThread): Parsing macros/materializations/view/view.sql
+2021-09-27 08:57:46.426361 (MainThread): Parsing macros/materializations/view/create_or_replace_view.sql
+2021-09-27 08:57:46.430895 (MainThread): Parsing macros/materializations/seed/seed.sql
+2021-09-27 08:57:46.449870 (MainThread): Parsing macros/etc/get_custom_database.sql
+2021-09-27 08:57:46.451658 (MainThread): Parsing macros/etc/datetime.sql
+2021-09-27 08:57:46.459562 (MainThread): Parsing macros/etc/query.sql
+2021-09-27 08:57:46.461108 (MainThread): Parsing macros/etc/is_incremental.sql
+2021-09-27 08:57:46.462935 (MainThread): Parsing macros/etc/get_custom_schema.sql
+2021-09-27 08:57:46.465097 (MainThread): Parsing macros/etc/get_custom_alias.sql
+2021-09-27 08:57:46.465926 (MainThread): Parsing macros/schema_tests/unique.sql
+2021-09-27 08:57:46.467124 (MainThread): Parsing macros/schema_tests/relationships.sql
+2021-09-27 08:57:46.468627 (MainThread): Parsing macros/schema_tests/not_null.sql
+2021-09-27 08:57:46.469748 (MainThread): Parsing macros/schema_tests/accepted_values.sql
+2021-09-27 08:57:46.635816 (MainThread): Acquiring new athena connection "model.athena_project.lvmh_pcd_productmaster".
+2021-09-27 08:57:46.672347 (MainThread): [WARNING]: Test 'test.athena_project.unique_my_second_dbt_model_id.bc96125570' (models/example/schema.yml) depends on a node named 'my_second_dbt_model' which was not found
+2021-09-27 08:57:46.672552 (MainThread): [WARNING]: Test 'test.athena_project.not_null_my_second_dbt_model_id.dc1d13aa6d' (models/example/schema.yml) depends on a node named 'my_second_dbt_model' which was not found
+2021-09-27 08:57:46.686353 (MainThread): Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fc405564-c0e2-45f2-8c46-98df75e263ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa655ae9b80>]}
+2021-09-27 08:57:46.691830 (MainThread): write_gpickle is deprecated and will be removed in 3.0.Use ``pickle.dump(G, path, protocol)``
+2021-09-27 08:57:46.692271 (MainThread): Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fc405564-c0e2-45f2-8c46-98df75e263ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa655ae99d0>]}
+2021-09-27 08:57:46.692528 (MainThread): Found 1 model, 2 tests, 0 snapshots, 0 analyses, 145 macros, 0 operations, 0 seed files, 0 sources, 0 exposures
+2021-09-27 08:57:46.693589 (MainThread): 
+2021-09-27 08:57:46.693891 (MainThread): Acquiring new athena connection "master".
+2021-09-27 08:57:46.697141 (ThreadPoolExecutor-0_0): Acquiring new athena connection "list_awsdatacatalog".
+2021-09-27 08:57:46.723689 (ThreadPoolExecutor-0_0): Using athena connection "list_awsdatacatalog".
+2021-09-27 08:57:46.723846 (ThreadPoolExecutor-0_0): On list_awsdatacatalog: /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "connection_name": "list_awsdatacatalog"} */
+
+    select
+        distinct schema_name
+
+    from awsdatacatalog.INFORMATION_SCHEMA.schemata
+  
+2021-09-27 08:57:46.723930 (ThreadPoolExecutor-0_0): Opening a new connection, currently in state init
+2021-09-27 08:57:46.775810 (ThreadPoolExecutor-0_0): /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "connection_name": "list_awsdatacatalog"} */
+
+    select
+        distinct schema_name
+
+    from awsdatacatalog.INFORMATION_SCHEMA.schemata
+2021-09-27 08:57:48.836241 (ThreadPoolExecutor-0_0): SQL status: OK -1 in 2.11 seconds
+2021-09-27 08:57:48.839951 (ThreadPoolExecutor-0_0): On list_awsdatacatalog: Close
+2021-09-27 08:57:48.842081 (ThreadPoolExecutor-2_0): Acquiring new athena connection "list_awsdatacatalog_analytics_dev_dbt_test__audit".
+2021-09-27 08:57:48.851374 (ThreadPoolExecutor-2_0): Using athena connection "list_awsdatacatalog_analytics_dev_dbt_test__audit".
+2021-09-27 08:57:48.851612 (ThreadPoolExecutor-2_0): On list_awsdatacatalog_analytics_dev_dbt_test__audit: /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "connection_name": "list_awsdatacatalog_analytics_dev_dbt_test__audit"} */
+WITH views AS (
+      select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema
+      from "awsdatacatalog".INFORMATION_SCHEMA.views
+      where LOWER(table_schema) = LOWER('analytics_dev_dbt_test__audit')
+    ), tables AS (
+      select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema
+
+      from "awsdatacatalog".INFORMATION_SCHEMA.tables
+      where LOWER(table_schema) = LOWER('analytics_dev_dbt_test__audit')
+
+      -- Views appear in both `tables` and `views`, so excluding them from tables
+      EXCEPT 
+
+      select * from views
+    )
+    select views.*, 'view' AS table_type FROM views
+    UNION ALL
+    select tables.*, 'table' AS table_type FROM tables
+  
+2021-09-27 08:57:48.851783 (ThreadPoolExecutor-2_0): Opening a new connection, currently in state init
+2021-09-27 08:57:48.886629 (ThreadPoolExecutor-2_0): /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "connection_name": "list_awsdatacatalog_analytics_dev_dbt_test__audit"} */
+WITH views AS (
+      select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema
+      from "awsdatacatalog".INFORMATION_SCHEMA.views
+      where LOWER(table_schema) = LOWER('analytics_dev_dbt_test__audit')
+    ), tables AS (
+      select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema
+
+      from "awsdatacatalog".INFORMATION_SCHEMA.tables
+      where LOWER(table_schema) = LOWER('analytics_dev_dbt_test__audit')
+
+      -- Views appear in both `tables` and `views`, so excluding them from tables
+      EXCEPT 
+
+      select * from views
+    )
+    select views.*, 'view' AS table_type FROM views
+    UNION ALL
+    select tables.*, 'table' AS table_type FROM tables
+2021-09-27 08:57:50.771550 (ThreadPoolExecutor-2_0): SQL status: OK -1 in 1.92 seconds
+2021-09-27 08:57:50.772073 (ThreadPoolExecutor-2_0): On list_awsdatacatalog_analytics_dev_dbt_test__audit: Close
+2021-09-27 08:57:50.773030 (ThreadPoolExecutor-2_0): Acquiring new athena connection "list_awsdatacatalog_analytics_dev".
+2021-09-27 08:57:50.774068 (ThreadPoolExecutor-2_0): unclosed <ssl.SSLSocket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.2.15', 55274), raddr=('3.7.189.38', 443)>
+2021-09-27 08:57:50.776239 (ThreadPoolExecutor-2_0): Using athena connection "list_awsdatacatalog_analytics_dev".
+2021-09-27 08:57:50.776420 (ThreadPoolExecutor-2_0): On list_awsdatacatalog_analytics_dev: /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "connection_name": "list_awsdatacatalog_analytics_dev"} */
+WITH views AS (
+      select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema
+      from "awsdatacatalog".INFORMATION_SCHEMA.views
+      where LOWER(table_schema) = LOWER('analytics_dev')
+    ), tables AS (
+      select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema
+
+      from "awsdatacatalog".INFORMATION_SCHEMA.tables
+      where LOWER(table_schema) = LOWER('analytics_dev')
+
+      -- Views appear in both `tables` and `views`, so excluding them from tables
+      EXCEPT 
+
+      select * from views
+    )
+    select views.*, 'view' AS table_type FROM views
+    UNION ALL
+    select tables.*, 'table' AS table_type FROM tables
+  
+2021-09-27 08:57:50.776583 (ThreadPoolExecutor-2_0): Opening a new connection, currently in state closed
+2021-09-27 08:57:50.803555 (ThreadPoolExecutor-2_0): /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "connection_name": "list_awsdatacatalog_analytics_dev"} */
+WITH views AS (
+      select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema
+      from "awsdatacatalog".INFORMATION_SCHEMA.views
+      where LOWER(table_schema) = LOWER('analytics_dev')
+    ), tables AS (
+      select
+        table_catalog as database,
+        table_name as name,
+        table_schema as schema
+
+      from "awsdatacatalog".INFORMATION_SCHEMA.tables
+      where LOWER(table_schema) = LOWER('analytics_dev')
+
+      -- Views appear in both `tables` and `views`, so excluding them from tables
+      EXCEPT 
+
+      select * from views
+    )
+    select views.*, 'view' AS table_type FROM views
+    UNION ALL
+    select tables.*, 'table' AS table_type FROM tables
+2021-09-27 08:57:52.588968 (ThreadPoolExecutor-2_0): SQL status: OK -1 in 1.81 seconds
+2021-09-27 08:57:52.590138 (ThreadPoolExecutor-2_0): On list_awsdatacatalog_analytics_dev: Close
+2021-09-27 08:57:52.591835 (MainThread): 14:27:52 | Concurrency: 1 threads (target='dev')
+2021-09-27 08:57:52.592532 (MainThread): 14:27:52 | 
+2021-09-27 08:57:52.596626 (Thread-1): Began running node model.athena_project.lvmh_pcd_productmaster
+2021-09-27 08:57:52.597257 (Thread-1): 14:27:52 | 1 of 1 START table model analytics_dev.lvmh_pcd_productmaster........ [RUN]
+2021-09-27 08:57:52.597736 (Thread-1): Acquiring new athena connection "model.athena_project.lvmh_pcd_productmaster".
+2021-09-27 08:57:52.598066 (Thread-1): unclosed <ssl.SSLSocket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.2.15', 34842), raddr=('13.235.192.213', 443)>
+2021-09-27 08:57:52.598462 (Thread-1): Compiling model.athena_project.lvmh_pcd_productmaster
+2021-09-27 08:57:52.604995 (Thread-1): Writing injected SQL for node "model.athena_project.lvmh_pcd_productmaster"
+2021-09-27 08:57:52.606383 (Thread-1): finished collecting timing info
+2021-09-27 08:57:52.650105 (Thread-1): Using athena connection "model.athena_project.lvmh_pcd_productmaster".
+2021-09-27 08:57:52.650353 (Thread-1): On model.athena_project.lvmh_pcd_productmaster: /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "node_id": "model.athena_project.lvmh_pcd_productmaster"} */
+drop table if exists analytics_dev.lvmh_pcd_productmaster
+2021-09-27 08:57:52.650537 (Thread-1): Opening a new connection, currently in state closed
+2021-09-27 08:57:52.703609 (Thread-1): /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "node_id": "model.athena_project.lvmh_pcd_productmaster"} */
+drop table if exists analytics_dev.lvmh_pcd_productmaster
+2021-09-27 08:57:54.635437 (Thread-1): SQL status: OK -1 in 1.98 seconds
+2021-09-27 08:57:54.647063 (Thread-1): Writing runtime SQL for node "model.athena_project.lvmh_pcd_productmaster"
+2021-09-27 08:57:54.647485 (Thread-1): Using athena connection "model.athena_project.lvmh_pcd_productmaster".
+2021-09-27 08:57:54.647580 (Thread-1): On model.athena_project.lvmh_pcd_productmaster: /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "node_id": "model.athena_project.lvmh_pcd_productmaster"} */
+create table
+    analytics_dev.lvmh_pcd_productmaster
+
+    with (
+        format='parquet'
+    )
+  as
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+
+  
+2021-09-27 08:57:54.647955 (Thread-1): /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "node_id": "model.athena_project.lvmh_pcd_productmaster"} */
+create table
+    analytics_dev.lvmh_pcd_productmaster
+
+    with (
+        format='parquet'
+    )
+  as
+    /*
+    Welcome to your first dbt model!
+    Did you know that you can also configure models directly within SQL files?
+    This will override configurations stated in dbt_project.yml
+
+    Try changing "table" to "view" below
+*/
+
+
+
+with source_data as (
+
+    select 1 as id
+    union all
+    select null as id
+
+)
+
+select *
+from source_data
+
+/*
+    Uncomment the line below to remove records with null `id` values
+*/
+
+-- where id is not null
+2021-09-27 08:57:56.187834 (Thread-1): SQL status: OK -1 in 1.54 seconds
+2021-09-27 08:57:56.191997 (Thread-1): Using athena connection "model.athena_project.lvmh_pcd_productmaster".
+2021-09-27 08:57:56.192202 (Thread-1): On model.athena_project.lvmh_pcd_productmaster: /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "node_id": "model.athena_project.lvmh_pcd_productmaster"} */
+alter table analytics_dev.lvmh_pcd_productmaster set tblproperties ('classification' = 'parquet')
+2021-09-27 08:57:56.192533 (Thread-1): /* {"app": "dbt", "dbt_version": "0.20.0", "profile_name": "athena", "target_name": "dev", "node_id": "model.athena_project.lvmh_pcd_productmaster"} */
+alter table analytics_dev.lvmh_pcd_productmaster set tblproperties ('classification' = 'parquet')
+2021-09-27 08:57:57.728584 (Thread-1): SQL status: OK -1 in 1.54 seconds
+2021-09-27 08:57:57.734072 (Thread-1): finished collecting timing info
+2021-09-27 08:57:57.734241 (Thread-1): On model.athena_project.lvmh_pcd_productmaster: Close
+2021-09-27 08:57:57.734583 (Thread-1): Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fc405564-c0e2-45f2-8c46-98df75e263ef', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa655b93100>]}
+2021-09-27 08:57:57.734862 (Thread-1): 14:27:57 | 1 of 1 OK created table model analytics_dev.lvmh_pcd_productmaster... [OK -1 in 5.14s]
+2021-09-27 08:57:57.734995 (Thread-1): Finished running node model.athena_project.lvmh_pcd_productmaster
+2021-09-27 08:57:57.736453 (MainThread): Acquiring new athena connection "master".
+2021-09-27 08:57:57.736726 (MainThread): 14:27:57 | 
+2021-09-27 08:57:57.737208 (MainThread): 14:27:57 | Finished running 1 table model in 11.04s.
+2021-09-27 08:57:57.737310 (MainThread): Connection 'master' was properly closed.
+2021-09-27 08:57:57.737408 (MainThread): Connection 'model.athena_project.lvmh_pcd_productmaster' was properly closed.
+2021-09-27 08:57:57.737460 (MainThread): Connection 'list_awsdatacatalog_analytics_dev' was properly closed.
+2021-09-27 08:57:57.737577 (MainThread): unclosed <ssl.SSLSocket fd=5, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.2.15', 55294), raddr=('3.7.189.38', 443)>
+2021-09-27 08:57:57.739560 (MainThread): unclosed <ssl.SSLSocket fd=6, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=6, laddr=('10.0.2.15', 55284), raddr=('3.7.189.38', 443)>
+2021-09-27 08:57:57.742777 (MainThread): 
+2021-09-27 08:57:57.742965 (MainThread): Completed successfully
+2021-09-27 08:57:57.743097 (MainThread): 
+Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+2021-09-27 08:57:57.743296 (MainThread): Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa654322eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa65408ca00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fa65408c0a0>]}
+2021-09-27 08:57:57.744600 (MainThread): Flushing usage events
